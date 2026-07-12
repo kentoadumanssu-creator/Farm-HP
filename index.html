@@ -47,12 +47,12 @@
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* HERO */
-    .hero { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 24px; position: relative; overflow: hidden;
+    .hero { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 24px 110px; position: relative; overflow: hidden;
       background: linear-gradient(160deg, #d4f0dd 0%, #eef8e8 40%, #fffef5 100%);
     }
     .hero::before {
       content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80'%3E%3Cpath d='M0,40 Q150,10 300,40 Q450,70 600,40 Q750,10 900,40 Q1050,70 1200,40 L1200,80 L0,80 Z' fill='%23eaf6e2'/%3E%3C/svg%3E") no-repeat bottom center / cover;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80'%3E%3Cpath d='M0,40 L1200,40 L1200,80 L0,80 Z' fill='%23eaf6e2'/%3E%3C/svg%3E") no-repeat bottom center / cover;
     }
     .hero-tiles { position: absolute; inset: 0; display: flex; flex-wrap: wrap; opacity: 0.06; font-size: 3rem; pointer-events: none; align-content: flex-start; gap: 8px; padding: 8px; }
     .hero-badge { background: var(--primary); color: white; font-size: 0.78rem; padding: 5px 16px; border-radius: 999px; margin-bottom: 20px; letter-spacing: 0.08em; font-weight: 600; }
@@ -464,16 +464,6 @@
           <li>仲間と格安で楽しめる</li>
         </ul>
       </div>
-      <div class="pricing-card">
-        <h3>女性お一人様</h3>
-        <div class="pricing-price">¥300 <span style="font-size:0.9rem;font-weight:400">/ 1h</span></div>
-        <div class="pricing-sub">フリー参加</div>
-        <hr class="pricing-divider">
-        <ul class="pricing-list">
-          <li>他のお客様と麻雀</li>
-          <li>お気軽にご来店を</li>
-        </ul>
-      </div>
       <div class="pricing-card" style="grid-column:1/-1">
         <h3>フリー料金</h3>
         <div class="pricing-price" style="font-size:1.2rem;padding-top:6px">お電話にてご案内</div>
@@ -491,7 +481,7 @@
 
     <!-- DISCOUNT TABLE -->
     <div class="discount-section">
-      <h3>🎓 学生割引・👩 女性割引 セット料金表</h3>
+      <h3>一般🎓 学生割引・👩 女性割引 セット料金表</h3>
       <div class="discount-grid">
         <!-- 学生 -->
         <div class="discount-table-wrap student">
